@@ -51,6 +51,7 @@
 		searchResultBackColor: undefined, //'#FFFFFF',
 
 		enableLinks: false,
+		enableSelection: false,
 		highlightSelected: true,
 		highlightSearchResults: true,
 		showBorder: true,
@@ -333,7 +334,7 @@
 			this.toggleCheckedState(node, _default.options);
 			this.render();
 		}
-		else {
+		else if ((this.options.enableSelection)) {
 			
 			if (node.selectable) {
 				this.toggleSelectedState(node, _default.options);
