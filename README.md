@@ -8,6 +8,8 @@
 
 A simple and elegant solution to displaying hierarchical tree structures (i.e. a Tree View) while leveraging the best that Twitter Bootstrap has to offer.
 
+This fork adds the possibily to diable selection by default for all nodes.
+
 ![Bootstrap Tree View Default](https://raw.github.com/jonmiles/bootstrap-treeview/master/screenshot/default.PNG)
 
 ## Dependencies
@@ -16,7 +18,6 @@ Where provided these are the actual versions bootstrap-treeview has been tested 
 
 - [Bootstrap v3.3.4 (>= 3.0.0)](http://getbootstrap.com/)
 - [jQuery v2.1.3 (>= 1.9.0)](http://jquery.com/)
-
 
 ## Getting Started
 
@@ -281,6 +282,11 @@ Sets the icon to be used on a tree node with no child nodes.
 Boolean.  Default: false
 
 Whether or not to present node text as a hyperlink.  The href value of which must be provided in the data structure on a per node basis.
+
+#### enableSelection
+Boolean. Default: false
+
+Disables selection by default for all nodes. Must be set to `true` in order for `selectable` node option to take effect.
 
 #### expandIcon
 String, class name(s).  Default: "glyphicon glyphicon-plus" as defined by [Bootstrap Glyphicons](http://getbootstrap.com/components/#glyphicons)
